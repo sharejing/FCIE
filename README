@@ -1,0 +1,23 @@
+FCIEv1.0 (Froad Company Information Extraction)
+
+Classification: 二分类及多分类任务
+Date: 从文本中抽取时间 (以月份为单位)
+Entity: 实体识别 (针对特定问题，调用结巴分词工具)
+Number: 从文本中抽取整数和小数 (整数抽取和小数抽取针对特定问题已分开实现)
+Utils: 核心公共函数 (汉字到阿拉伯数字的互逆转化、文本的前预处理[去停用词、去重复、ASR纠正]、问题分类ID)
+ 
+  client_test.py  客户端测试
+  FCIE_v1.py    总的调用接口，非常重要 (若要修改这部分，请一定相互告知)
+  local_test.py  本地测试 (给定问题编号和文本，即可在本地服务器测试，这是我们内部的测试程序)
+  routes_java.py     远程java调用接口
+  routes_python.py  远程python调用接口
+  
+  run.sh  一键式后台启动
+
+2019/8/8
+对"记不清"这样对回答进行处理
+
+
+2019/8/12
+当前版本为FCIE_v1_1.py   FCIE_v1.py已做好备份
+
